@@ -77,14 +77,22 @@ footer p {
 }
 
 @media (max-width: 1250px) {
+    .container {
+        height: 120vh;
+    }
+    
     .hero .hero-right h2 {
         font-size: 40px;
+    }
+
+    .hero {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 1024px) {
     .container {
-        height: 150vh;
+        height: 115vh;
     }
 
     .hero {
@@ -102,7 +110,7 @@ footer p {
 
 @media (max-width: 800px) {
     .container {
-        height: 120vh;
+        height: 110vh;
     }
 
     .hero img {
@@ -125,7 +133,7 @@ footer p {
     }
 
     .container {
-        height: 110vh;
+        height: 105vh;
     }
 
     .hero img {
