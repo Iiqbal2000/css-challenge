@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px 77px;
+    font-family: 'Space Mono', monospace;
+}
+
+/* header */
+header {
+    padding-bottom: 100px;
+}
+
+header p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    height: 75vh;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero img {
+    max-height: 450px;
+}
+
+.hero .hero-right {
+    margin-left: 200px;
+    height: 100%;
+}
+
+.hero .hero-right h2 {
+    font-size: 64px;
+    font-weight: bold;
+    max-width: 700px;
+    margin-bottom: 36px;
+    color: #333;
+}
+
+.hero .hero-right p {
+    font-size: 24px;
+    line-height: 36px;
+    color: #4f4f4f;
+}
+
+.hero .hero-right .btn {
+    margin-top: 64px;
+}
+
+.hero .hero-right .btn button {
+    height: 50px;
+    padding: 0 30px;
+    background:  #333;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;    
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        height: 150vh;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        max-height: 350px;
+    }
+
+    .hero .hero-right {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        height: 120vh;
+    }
+
+    .hero img {
+        max-height: 300px;
+    }
+
+    .hero .hero-right h2 {
+        font-size: 48px;
+    }
+
+    .hero .hero-right p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 20px 24px;
+    }
+
+    .container {
+        height: 110vh;
+    }
+
+    .hero img {
+        max-height: 200px;
+    }
+
+    .hero .hero-right p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .hero .hero-right .btn button {
+        font-size: 14px;
+    }
+
+
+}
+
