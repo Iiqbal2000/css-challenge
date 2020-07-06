@@ -76,6 +76,12 @@ footer p {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 1250px) {
+    .hero .hero-right h2 {
+        font-size: 48px;
+    }
+}
+
 @media (max-width: 1024px) {
     .container {
         height: 150vh;
