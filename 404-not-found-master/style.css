@@ -95,10 +95,6 @@ footer p {
         height: 115vh;
     }
 
-    .hero {
-        flex-direction: column;
-    }
-
     .hero img {
         max-height: 350px;
     }
