@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5em 5em;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+
+header .text-right h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .text-right p {
+    font-size: 1rem;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery {
+    display: grid;
+    margin-top: 96px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-1, .card-2 {
+    margin-bottom: 20%;
+}
+
+.card-2 {
+    grid-column: 2 / 3;
+    margin-top: 25%;
+}
+
+.card-1 img, .card-2 img{
+    width: 85%;
+    margin-bottom: 5%;
+}
+
+.subcard {
+    display: flex;
+}
+
+.card-1 .name-bottom, .card-2 .name-bottom {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.card-1 .name-vertical, .card-2 .name-vertical {
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: #a9a9a9;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 1em 1em;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header .text-right h3 {
+        font-size: 1rem;
+    }
+
+    header .text-right p {
+        font-size: .8rem;
+        line-height: 21px;
+    }
+
+    .card-1 .name-bottom, .card-2 .name-bottom {
+        font-size: .7rem;
+    }
+    
+    .card-1 .name-vertical, .card-2 .name-vertical {
+        font-size: .5rem;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .text-right {
+        width: 100%;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header .text-right h3 {
+        margin-top: 36px;
+    }
+
+    header .text-right p {
+        line-height: 21px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-1, .card-2 {
+        margin-bottom: 20%;
+    }
+
+    .card-2 {
+        grid-column: auto;
+        margin-top: 0;
+    }
+
+    .mobile {
+        grid-column: 2 / 3;
+        margin-top: 30%;
+    }
+
+    .card-1 img, .card-2 img {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .card-1 .name-bottom, .card-2 .name-bottom {
+        font-size: 1rem;
+    }
+    
+    .card-1 .name-vertical, .card-2 .name-vertical {
+        font-size: .6rem;
+    }
+
+
+}
