@@ -26,6 +26,10 @@ header p {
 
 .container {
     height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2%;
 }
 
 .hero {
@@ -34,7 +38,8 @@ header p {
 }
 
 .hero img {
-    max-height: 500px;
+    /* max-height: 500px; */
+    width: 40%;
 }
 
 .hero .hero-right {
@@ -54,6 +59,7 @@ header p {
     font-size: 24px;
     line-height: 36px;
     color: #4f4f4f;
+    white-space: nowrap;
 }
 
 .hero .hero-right .btn {
@@ -79,10 +85,15 @@ footer p {
 @media (max-width: 1250px) {
     .container {
         height: 120vh;
+        
+    }
+
+    .hero img {
+        margin-bottom: 3em;
     }
     
     .hero .hero-right h2 {
-        font-size: 40px;
+        font-size: 3rem;
     }
 
     .hero {
@@ -114,7 +125,7 @@ footer p {
     }
 
     .hero .hero-right h2 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .hero .hero-right p {
@@ -134,6 +145,10 @@ footer p {
 
     .hero img {
         max-height: 200px;
+    }
+
+    .hero .hero-right h2 {
+        font-size: 1.5rem;
     }
 
     .hero .hero-right p {

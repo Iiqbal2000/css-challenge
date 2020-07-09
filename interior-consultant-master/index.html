@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Interior Consultant</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="btn">
+                <a href="">THIS INTERIOR</a>
+            </div>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Collection</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="menu-toogle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="col-1">
+            <p class="title">Modern interior</p>
+            <div class="paragraf">
+                <p>A full-Service residential &</p>
+                <p>commercial interior design and</p>
+                <p>staging company offering</p>
+                <p>professional organizing &</p>
+                <p>eco-services.</p>
+            </div>
+    
+            <div class="hero-btn">
+                <a href="">Read more <img class="material-icons" src="assets/icon/icon1.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <img src="assets/img/photo1.png" alt="">
+            <div class="card">
+                <div class="card-header">
+                    <img src="assets/img/photo2.png" alt="">
+                    <div>
+                        <p class="title-name">Aliza Webber</p>
+                        <p class="job">Interior designer</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <p>Designed in 2020 by </p>
+                    <p>Aliza Webber</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>IQBAL @ DevChallenges.io</p>
+    </footer>
+
+    <script>
+        const menuToogle = document.querySelector('.menu-toogle input');
+        const ul = document.querySelector('nav ul');
+
+        menuToogle.addEventListener('click', function() {
+            ul.classList.toggle('slide');
+        });
+
+    </script>
+
+</body>
+</html>
