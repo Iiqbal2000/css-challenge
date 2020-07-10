@@ -130,7 +130,6 @@ aside {
 
 aside .sub-aside {
     display: flex;
-    /* align-items: center; */
     margin: 4em 0;
 }
 
@@ -143,9 +142,17 @@ aside .sub-aside .aside-detail p {
     white-space: nowrap;
 }
 
+#source {
+    margin-top: 1em;
+}
+
 footer {
     text-align: center;
     color: #a9a9a9;
+}
+
+footer p {
+    margin-bottom: 1em;
 }
 
 
