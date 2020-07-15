@@ -125,6 +125,7 @@
     right: 0;
     color: #828282;
     top: 14px;
+    padding-right: .5em;
 }
 
 .form-wrapper .input-wrapper .input-select {
