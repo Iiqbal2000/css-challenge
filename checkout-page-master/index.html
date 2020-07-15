@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Checkout Page</title>
+
+</head>
+<body>
+    <div class="container">
+        <p class="title-1">Checkout</p>
+        <form id="formCheckout">
+            <div class="information">
+                <div class="form-wrapper">
+                    <div class="contact-wrapper">
+                        <p class="title-2">Contact Information</p>
+                            <label for="mail">E-mail</label>
+                            <div class="input-wrapper">
+                                <span class="material-icons icon-span icon-1 color-icon">email</span>
+                                <input type="email" name="mail" id="mail" placeholder="Enter your email..." required>
+                            </div>
+            
+                            <label for="phone">Phone</label>
+                            <div class="input-wrapper margin-bottom">
+                                <span class="material-icons icon-2 icon-span color-icon">phone</span>
+                                <input type="text" name="phone" id="phone" placeholder="Enter your phone..." required>
+                            </div>
+            
+                    </div>
+        
+                    <div class="shipping-wrapper">
+                        <p class="title-2">Shipping Address</p>
+                            <label for="fullName">Full name</label>
+                            <div class="input-wrapper">
+                                <span class="material-icons icon-1 icon-span color-icon">account_circle</span>
+                                <input type="text" name="fullName" id="fullName" placeholder="Your name.." value="Rodney Cotton" required>
+                            </div>
+            
+                            <label for="address">Address</label>
+                            <div class="input-wrapper">
+                                <span class="material-icons icon-2 icon-span color-icon">home</span>
+                                <input type="text" name="address" id="address" placeholder="Your address.." required>
+                            </div>
+        
+                            <label for="city">City</label>
+                            <div class="input-wrapper">
+                                <span class="material-icons icon-2 icon-span color-icon">location_city</span>
+                                <input type="text" name="city" id="city" placeholder="Your city.." required>
+                            </div>
+        
+                            <div class="field-flex">
+                                <div class="country-field">
+                                    <label for="country">Country</label>
+                                    <div class="input-wrapper">
+                                        <span class="material-icons icon-span icon-2 color-icon">public</span>
+                                        <span class="material-icons arrow-icon">keyboard_arrow_down</span>
+                                        <select class="input-select" name="country" id="country" required>
+                                            <option value="" selected hidden>Your country..</option>
+                                            <option value="australia">Australia</option>
+                                            <option value="italy">Italy</option>
+                                            <option value="japan">Japan</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="postal-field">
+                                    <label for="code">Postal code</label>
+                                    <div class="input-wrapper">
+                                        <span class="material-icons icon-span icon-2 color-icon">markunread_mailbox</span>
+                                        <input type="text" name="code" id="code" placeholder="Your postal code.." required>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="save-info" id="save-info" required>
+                                <label for="save-info">Save this information for next time</label>
+                            </div>
+                            <div class="btn-submit">
+                                <button type="submit">Continue</button>
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="item-wrapper">
+                    <div class="section-1">
+                        <div class="item">
+                            <div class="section-header">
+                                <img src="assets/img/photo1.png" alt="">
+                            </div>
+                            <div class="section-body">
+                                <p class="item-name">Vintage Backbag</p>
+                                <div class="price">
+                                    <p class="discount-price">$54.99</p>
+                                    <p class="original-price"><del>$94.99</del></p>
+                                </div>
+                                <div class="btn-item">
+                                    <div class="btn-wrapper">
+                                        <button type="button" class="decrement">
+                                            <span class="material-icons md-18">remove</span>
+                                        </button>
+                                    </div>
+                                    <input type="number" name="number" id="number" value="1">
+                                    <div class="btn-wrapper">
+                                        <button type="button" class="increment">
+                                            <span class="material-icons md-18">add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="section-header">
+                                <img src="assets/img/photo2.png" alt="">
+                            </div>
+                            <div class="section-body">
+                                <p class="item-name">Levi Shoes</p>
+                                <div class="price">
+                                    <p class="discount-price">$74.99</p>
+                                    <p class="original-price"><del>$124.99</del></p>
+                                </div>
+                                <div class="btn-item">
+                                    <div class="decrement-wrapper">
+                                        <button type="button" class="decrement">
+                                            <span class="material-icons md-18">remove</span>
+                                        </button>
+                                    </div>
+                                    <input type="number" name="number" id="number" value="1">
+                                    <div class="increment-wrapper">
+                                        <button type="button" class="increment">
+                                            <span class="material-icons md-18">add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="section-2">
+                        <div class="item-shipping">
+                            <p>Shipping</p>
+                            <p>$19</p>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <p>$148.98</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+        <p>IQBAL @ DevChallenges.io</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('formCheckout');
+
+        form.onsubmit = (e) => {
+            const mail = document.getElementById('mail');
+            const phone = document.getElementById('phone');
+            const name = document.getElementById('fullName');
+            const address = document.getElementById('address');
+            const city = document.getElementById('city');
+            const country = document.getElementById('country');
+            const postalcode = document.getElementById('code');
+            e.preventDefault();
+
+            if (mail.value && phone.value && name.value && address.value && city.value && country.value 
+                && postalcode.value !== '') {
+                    alert('successful');
+                } else {
+                    alert('error');
+                }
+        };
+    </script>
+
+</body>
+</html>

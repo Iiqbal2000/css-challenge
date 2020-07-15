@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+
+.margin-bottom {
+    margin-bottom: 3em;
+}
+
+.container {
+    width: 80%;
+    margin: 3em auto;
+}
+
+.title-1 {
+    margin-bottom: 1.5em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4E5150;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .form-wrapper {
+    width: 50%;
+}
+
+.form-wrapper .contact-wrapper {
+    width: 100%;
+}
+
+.title-2 {
+    font-size: 1.4rem;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.form-wrapper label {
+    color: #4f4f4f;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-wrapper .input-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: .5em;
+}
+
+.form-wrapper .input-wrapper .icon-span {
+    position: absolute;
+    left: 0px;
+    padding: 0 .5em;
+    z-index: 1;
+    color: #828282;
+}
+
+.form-wrapper .input-wrapper span.icon-1 {
+    top: 13px;
+}
+
+.form-wrapper .input-wrapper span.icon-2 {
+    top: 12px;
+}
+
+.form-wrapper .input-wrapper input {
+    width: 100%;
+    border-radius: 12px;
+    padding: 1em 0 1em 3em;
+    margin-bottom: 2%;
+    border: 1px solid #4f4f4f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-wrapper .input-wrapper input:focus{
+    border: 2px solid #F2994A;
+}
+
+.form-wrapper .input-wrapper input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-wrapper .field-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper .field-flex .country-field  {
+    width: 40%;
+}
+
+.form-wrapper .field-flex .postal-field  {
+    width: 40%;
+}
+
+.form-wrapper .field-flex .country-field select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+    padding-right: 1em;
+
+}
+  
+  /* For IE10 */
+.form-wrapper .field-flex .country-field select::-ms-expand {
+    display: none;
+}
+
+.form-wrapper .input-wrapper span.arrow-icon {
+    position: absolute;
+    right: 0;
+    color: #828282;
+    top: 14px;
+}
+
+.form-wrapper .input-wrapper .input-select {
+    width: 100%;
+    padding: .8em 0 .8em 2.5em;
+    font-size: 16px;
+    border: 1px solid #4f4f4f;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-wrapper .input-wrapper .input-select:invalid {
+    color: gray; 
+}
+
+.form-wrapper .shipping-wrapper .input-checkbox {
+    margin-top: 1em;
+    
+}
+
+.form-wrapper .shipping-wrapper .input-checkbox label {
+    margin-left: .5em;
+    font-size: 15px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: end;
+}
+
+button[type=submit] {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #F2994A;
+    color: white;
+    border-radius: 12px;
+    width: 150px;
+    border: 1px solid #F2994A;
+    cursor: pointer;
+}
+
+.container .item-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    height: 50%;
+    width: 35%;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.container .item-wrapper .section-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.container .item-wrapper .section-1 .item {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.container .item-wrapper .section-1 .item .section-header {
+    margin-right: 1em;
+}
+
+.container .item-wrapper .section-1 .item .section-header img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.container .item-wrapper .section-1 .item .section-body .item-name {
+    font-size: 1.3em;
+    color: #4E5150;
+    margin-bottom: .5em;
+}
+
+.container .item-wrapper .section-1 .item .section-body .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.container .item-wrapper .section-1 .item .section-body .price .discount-price {
+    font-size: 1.3em;
+    color: #F2994A;
+    margin-right: 1em;
+}
+
+.container .item-wrapper .section-1 .item .section-body .price .original-price {
+    color: #4E5150;
+}
+
+.container .item-wrapper .section-1 .item .section-body .btn-item {
+    border: 1px solid black;
+    padding: .5em;
+    height: 60px;
+    width: 150px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type=button] {
+    width: 30px;
+    border: none;
+    display: inline-block;   
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    width: 30%;
+    background-color: #f2f2f2;
+    border: none;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container .item-wrapper .section-2 .item-shipping {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    padding: 1em 0;
+}
+
+.container .item-wrapper .section-2 .total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    padding: 1em 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #a9a9a9;
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        width: 90%;
+    }
+    .container .item-wrapper {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 1122px) {
+    .container .item-wrapper .section-1 .item .section-header {
+        width: 50%;
+    }
+
+    .container .item-wrapper .section-1 .item .section-header img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .information {
+        flex-direction: column;
+    }
+
+    .information .form-wrapper {
+        order: 2;
+        width: 100%;
+    }
+
+    .information .item-wrapper {
+        order: 1;
+        width: 100%;
+    }
+
+    .container .item-wrapper .section-1 .item .section-header {
+        width: auto;
+    }
+
+    .container .item-wrapper .section-1 .item .section-header img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .container .item-wrapper .section-1 .item .section-header {
+        width: 50%;
+    }
+
+    .container .item-wrapper .section-1 .item .section-header img {
+        width: 100%;
+    }
+}
