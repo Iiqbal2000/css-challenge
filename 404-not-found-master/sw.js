@@ -2,11 +2,11 @@
 
 const urlsToCache = [
     '/',
-    'app.js',
-    'icon.png',
-    'index.html',
-    'Scarecrow.png',
-    'style.css'
+    './app.js',
+    './icon.png',
+    './index.html',
+    './Scarecrow.png',
+    './style.css'
 ];
 
 self.addEventListener('install', (event) => { // menambahkan event install untuk menginstall service worker=self
