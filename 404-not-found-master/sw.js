@@ -1,8 +1,8 @@
 let urlsToCache = [
-    '/',
-    '/app.js',
+    './',
+    './app.js',
     // '/icon.png',
-    // '/index.html',
+    './index.html',
     // '/Scarecrow.png',
     // '/style.css'
 ];
