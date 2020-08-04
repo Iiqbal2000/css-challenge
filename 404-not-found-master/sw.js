@@ -1,6 +1,4 @@
-// install service worker
-
-const urlsToCache = [
+let urlsToCache = [
     '/',
     './app.js',
     './icon.png',
