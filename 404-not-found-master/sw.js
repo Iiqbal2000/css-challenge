@@ -1,10 +1,10 @@
 let urlsToCache = [
-    './',
-    './app.js',
-    // '/icon.png',
-    './index.html',
-    // '/Scarecrow.png',
-    // '/style.css'
+    './404-not-found-master/',
+    './404-not-found-master/app.js',
+    './404-not-found-master/icon.png',
+    './404-not-found-master/index.html',
+    './404-not-found-master/Scarecrow.png',
+    './404-not-found-master/style.css'
 ];
 
 self.addEventListener('install', (event) => { // menambahkan event install untuk menginstall service worker=self
